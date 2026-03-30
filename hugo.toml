@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'SeungHyun Sung'
 theme = 'maverick'
 
+[author]
+    name = "SeungHyun Sung"
+
 [params]
     name = 'SeungHyun Sung'
     description = 'My Blog'
@@ -14,12 +17,6 @@ theme = 'maverick'
         name = 'About'
         url = '/'
         weight = 1
-
-    [[menu.main]]
-        identifier = 'posts'
-        name = 'Posts'
-        url = '/posts/'
-        weight = 2
 
     [[menu.main]]
         identifier = 'ctf-writeups'
