@@ -17,7 +17,7 @@ I'm interested in learning more about Offensive Security and partaking in CTF Co
 
 ## CTF Participation
 
-**UMassCTF 2026** - 94th / 865 teams
+**UMassCTF 2026** - 94th / 865 teams 
 *Team: CuCyber*
 
 **EHAX CTF 2026** - 59th / 887 teams  
