@@ -5,36 +5,28 @@
     <div class="content">
       {{ partial "header.html" . }}
 
+      <h2> CTF Write-Ups </h2>
+      <p> Here are the write-ups I wrote for some of the challenges I solved across various CTF competitions. Feel free to contact me with any feedback. </p>
       {{ .Content }}
 
-      {{ $pages := sort (where .Site.RegularPages "Section" "ctf-writeups") "File.Path" "asc" }}
+      {{ $pages := sort (where .Site.RegularPages "Section" "ctf-writeups") "Date" "desc" }}
 
-      {{ $ctfs := slice }}
-      {{ range $pages }}
-        {{ $path := replace .File.Path "\\" "/" }}
-        {{ $parts := split $path "/" }}
-        {{ if ge (len $parts) 4 }}
-          {{ $ctfs = $ctfs | append (index $parts 1) }}
-        {{ end }}
-      {{ end }}
-
-      {{ range $ctf := uniq $ctfs }}
-        <h2>{{ replace $ctf "-" " " | title }}</h2>
-        <ul>
-          {{ range $pages }}
-            {{ $path := replace .File.Path "\\" "/" }}
-            {{ $parts := split $path "/" }}
-            {{ if and (ge (len $parts) 4) (eq (index $parts 1) $ctf) }}
-              {{ $category := index $parts 2 }}
-              <li>
-                <a href="{{ .RelPermalink }}">[{{ $category }}] {{ .Title }}</a>
-              </li>
-            {{ end }}
+      <ul>
+        {{ range $pages }}
+          {{ $path := replace .File.Path "\\" "/" }}
+          {{ $parts := split $path "/" }}
+          {{ if ge (len $parts) 5 }}
+            {{ $ctf := replace (index $parts 1) "-" " " | title }}
+            {{ $category := (index $parts 2) }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ $ctf }} — [{{ $category }}] {{ .Title }}</a>
+            </li>
           {{ end }}
-        </ul>
-      {{ end }}
+        {{ end }}
+      </ul>
 
     </div>
   </main>
 </body>
+
 </html>

@@ -16,6 +16,8 @@ I'm interested in learning more about Offensive Security and partaking in CTF Co
 
 
 ## CTF Participation
+**Incognito 7.0** - 26th / 277 teams  
+*Team: c4sket*
 
 **UMassCTF 2026** - 94th / 865 teams  
 *Team: CuCyber*
