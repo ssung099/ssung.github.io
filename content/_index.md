@@ -14,7 +14,6 @@ I'm interested in learning more about Offensive Security and partaking in CTF Co
 **Neural Audio Localization Research Assistant** - Aug 2024 - May 2025  
 *iCosMos Lab - University of Maryland - College Park*
 
-
 ## CTF Participation
 **Incognito 7.0** - 26th / 277 teams  
 *Team: c4sket*
@@ -30,8 +29,8 @@ I'm interested in learning more about Offensive Security and partaking in CTF Co
 
 ## Education
 
-**Master of Science in Computer Science**  
+**Master of Science in Computer Science - Computer Security Track**  
 *Columbia University* - Current
 
-**Bachelors of Science in Computer Science**  
+**Bachelors of Science in Computer Science - Cybersecurity Track**  
 *University of Maryland - College Park*
